@@ -39,10 +39,13 @@
         }
 
         /* ── Header ── */
-        header {
+        .sticky-top {
             position: sticky;
             top: 0;
-            z-index: 101;
+            z-index: 100;
+        }
+
+        header {
             background-color: var(--header-bg);
             color: white;
             padding: 2.5em 1em 1.8em;
@@ -55,9 +58,6 @@
 
         /* ── Sticky Nav ── */
         nav {
-            position: sticky;
-            top: 0;
-            z-index: 100;
             background: var(--nav-bg);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
@@ -137,6 +137,7 @@
     </style>
 </head>
 <body>
+    <div class="sticky-top">
     <header>
         <h1>Venkatasubramanian V.</h1>
         <p id="typewriter"></p>
@@ -151,6 +152,7 @@
         <a href="#contact">Contact</a>
         <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode">🌙</button>
     </nav>
+    </div>
 
     <section class="profile-img" id="profile">
         <img src="IMG_0832a-removebg-preview.png" alt="Venkatasubramanian V.">
